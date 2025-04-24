@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 40px;
+    box-sizing: border-box;
+    font-size: 30px;
 }
 
 .box-container {
@@ -9,11 +10,21 @@
 }
 
 .box-one {
+    height: 100px;
+    width: 300px;
     background-color: rgb(182, 26, 26);
-    border: 0 solid purple;
+    border: 20px solid purple;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
 
 .box-two {
+    height: 100px;
+    width: 300px;
     background-color: rgb(20, 20, 168);
-    border: 0 solid green;
+    border: 20px solid green;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
