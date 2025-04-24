@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.box-container {
+    color: white;
+}
+
+.box-one {
+    background-color: rgb(182, 26, 26);
+    border: 0 solid purple;
+}
+
+.box-two {
+    background-color: rgb(20, 20, 168);
+    border: 0 solid green;
+}
