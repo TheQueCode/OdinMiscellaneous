@@ -18,44 +18,16 @@
 
     <p>By default flex items don't shrink below their min-content size. To change this, set the item's min-width or min-height.</p>
 
-    <h2>Flex-grow</h2>
+    <h2><a href="pages/flexgrow.html" target="_blank" rel="noopener noreferrer">Flex-grow</a></h2>
 
-    <p><span>flex-grow</span> expects a single number as its value. That number is the flex-item's "growth factor".</p>
 
-    <p>flex:1 means every div inside our container will grow the same amount.</p>
+    <h2><a href="pages/flexshrink.html" target="_blank" rel="noopener noreferrer">Flex-shrink</a></h2>
 
-    <p>Adding flex: 2 to just one of the divs, that div will grow 2x the size of the others.</p>
 
-    <h2>Flex-shrink</h2>
+    <h2><a href="pages/flexbasis.html" target="_blank" rel="noopener noreferrer">Flex-basis</a></h2>
 
-    <p><span>flex-shrink</span> is similar to flex-grow but sets the "<span>shrink factor</span>" and not the "growth factor".</p>
 
-    <p>flex-shrink only ends up being applied if the size of all flex items is larger than their parent container</p>
+    <h2><a href="pages/flexvalues.html" target="_blank" rel="noopener noreferrer">Flex-values</a></h2>
 
-    <p>The default shrink factor is <span>flex-shrink: 1</span>, which means all items will shrink evenly.</p>
-
-    <p>If you <em><strong>do not want</strong></em> an item to shrink then you can specify <span>flex-shrink: 0;</span></p>
-
-    <p>When you specify <span>flex-grow</span> or <span>flex-shrink</span>, flex items do not necessarily respect your given values for width</p>
-
-    <h2>Flex-basis</h2>
-
-    <p><span>flex-basis</span> sets the initial size of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size</p>
-
-    <p>When the <span>flex-basis</span> is set to 0% (its default when using shorthand) everything shrinks evenly. Using <span>auto</span> as your <span>flex-basis</span> tells the item to check for a width declaration</p>
-
-    <p><span>flex: auto is not the default value when using the flex shorthand</span></p>
-
-    <p><span>There is a difference between the default value of flex-basis and the way the flex shorthand defines it if no flex-basis is given. The actual default value for flex-basis is auto, but when you specify flex: 1 on an element, it interprets that as flex: 1 1 0. If you want to only adjust an item’s flex-grow you can do so directly, without the shorthand. Or you can be more verbose and use the full 3 value shorthand flex: 1 1 auto, which is also equivalent to using flex: auto.</span></p>
-
-    <h2>Flex-values</h2>
-
-    <p><span>flex: initial</span> Flex item doesn't grow but can shrink. This default value expands to <span>flex: 0 1 auto</span>. The item is sized according to its width or height properties, depending on the flex-direction. If there is negative available space, the item will shrink to its minimum size to fit within the container but will not grow to absorb any positive space available in the flex container.</p>
-
-    <p><span>flex: auto</span> Flex item can grow and shrink. This value expands to <span>flex: 1 1 auto</span>. The item is sized according to its width or height properties, depending on the flex-direction, but grows to absorb available positive space in the flex container or shrink down to its minimum size to fit the container in the case of negative space. The flex item is fully flexible.</p>
-
-    <p><span>flex: none</span> Flex item neither grows nor shrinks. This value expands to <span>flex: 0 0 auto</span>. The item is sized according to its width or height properties, depending on the direction of the flex container. The flex item is fully inflexible.</p>
-
-    <p><span>flex: [numbers]</span> Flex main size will be proportional to the number set. This value expands to <span>flex: [number] 1 0</span>. This sets the flex-basis to zero and makes the flex item flexible. The item will be at least as wide or tall as its minimum size, with the container's positive available space being proportionally distributed based on the growth factors of this item and its sibling flex items. If all the flex items use this pattern, all will be sized in proportion to their numeric values.</p>
 </body>
 </html>
