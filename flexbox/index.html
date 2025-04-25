@@ -8,13 +8,16 @@
 </head>
 <body>
     <h1>Flexbox</h1>
-    <p>Flex is actually a shorthand for <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and <strong>flex-basis</strong>.</p>
 
-    <p><span>flex: 1</span> equates to: <em>flex-grow: 1</em>, <em>flex-shrink: 1</em>, <em>flex-basis: 0</em>.</p>
+    <p>Flexbox is generally the right CSS layout solution when you want to lay out a collection of items in one dimension or control the spacing between items</p>
 
-    <p>Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow. So when we put <span>flex: 1</span> on our divs, we were actually specifying a shorthand of <span>flex: 1 1 0</span>.</p>
+    <p>Flex includes: <strong>flex-grow</strong>, <strong>flex-shrink</strong>, and <strong>flex-basis</strong>.</p>
 
-    <p><span>flex: auto</span> equates to: <em>flex-grow: 1</em>, <em>flex-shrink: 1</em>, and <em>flex-basis: auto</em>. The shorthand of which is <span>flex: 1 1 auto</span></p>
+    <p><span>flex: 1</span> is a flex shorthand that equates to: <em>flex-grow: 1</em>, <em>flex-shrink: 1</em>, <em>flex-basis: 0</em>.</p>
+
+    <p>Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow. So when we put <span>flex: 1</span> on our divs, we were actually specifying <span>flex: 1 1 0</span>.</p>
+
+    <p><span>flex: auto</span> equates to: <em>flex-grow: 1</em>, <em>flex-shrink: 1</em>, and <em>flex-basis: auto</em>. Which is <span>flex: 1 1 auto</span></p>
 
     <p>By default flex items don't shrink below their min-content size. To change this, set the item's min-width or min-height.</p>
 
