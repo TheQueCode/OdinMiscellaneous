@@ -143,7 +143,115 @@ const output = `I like the song ${song}. I gave it a score of ${(score / highest
 console.log(output); // I like the song Fight the Youth. I gave it a score of 90%
 */
 
+/* Multiline strings */
+/*
 const newline = `One day you finally knew 
 what you had to do, 
 and began,`;
-console.log(newline);
+console.log(newline); 
+/* One day you finally knew
+what you had to do,
+and began,
+*/
+/*
+const newline2 = 'One day you finally knew\nwhat you had to do,\nand began,';
+console.log(newline2);
+*/
+/*
+const goodQuotes1 = 'She said, "I think so!"';
+const goodQuotes2 = `She said, "I'm not going in there!"`;
+console.log(goodQuotes1, goodQuotes2);
+
+const bigmouth = 'I\'ve got not right to take my place...';
+console.log(bigmouth);
+*/
+/*
+const name = "Front ";
+const number = 242;
+console.log(name + number); // Front 242
+
+/* The Number() function converts anything passed to it into a number if it can. */
+/*
+const myString = "123";
+const myNum = Number(myString);
+console.log(typeof myNum); // number
+
+/* can also be done with + */
+/*
+const newString = "1110";
+const newNum = +newString;
+console.log(typeof newNum); // number
+
+/* The String() function converts its argument to a string */
+/*
+const myNum2 = 123;
+const myString2 = String(myNum2);
+console.log(typeof myString2); // string
+*/
+/*
+let hour = 12;
+let time = 2;
+/*
+Use -if- to specify a block of code to be executed, if a specified condition is true
+*/
+/*
+if (hour < 18){
+    greeting = "Good day";
+}
+*/
+/*
+Use else to specify a block of code to be executed, if the same condition is false
+*/
+/*
+if (hour < 18){
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+
+/*
+Use else if to specify a new condition to test, if the first condition is false
+*/
+/*
+if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+
+/*
+Use switch to specify many alternative blocks of code to be executed
+*/
+// console.log(greeting);
+/*
+function add7(num){
+    console.log(num + 7);
+}
+
+add7(12);
+
+function multiply(a, b){
+    console.log(a * b);
+}
+
+multiply(10, 9);
+
+function capitalize(string){
+    console.log(string[0].toUpperCase() + string.slice(1).toLowerCase());
+}
+
+capitalize("boo");
+capitalize("BaBy");
+capitalize("AHHHH!");
+
+function lastLetter(letters){
+    console.log(letters.slice(-1));
+}
+
+lastLetter("asdjvkaehvkecnewkhverhv");
+lastLetter("alkvfbweiurncewhvenwc");
+lastLetter("abcd");
+*/
+
