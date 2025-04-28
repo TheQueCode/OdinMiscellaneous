@@ -255,3 +255,13 @@ lastLetter("alkvfbweiurncewhvenwc");
 lastLetter("abcd");
 */
 
+let num = +prompt("Enter a number: ");
+
+for (let i = 1; i <= num; i++){
+    let answer = ""
+    if (i % 3 === 0) answer += "Fizz"
+    if (i % 5 === 0) answer += "Buzz"
+    console.log(answer || i);
+}
+
+
