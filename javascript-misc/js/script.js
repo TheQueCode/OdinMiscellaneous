@@ -85,3 +85,65 @@ let b = +prompt("Second number?", 2);
 
 alert(a + b); 
 */
+
+/* MDN web docs */
+/*
+const string = "The revolution will not be televised.";
+console.log(string);
+
+/*
+const badstring1 = This is a test;
+const badstring2 = 'This is a test;
+const badstring3 = This is a test';
+*/
+/*
+const badString = string;
+console.log(badString);
+
+const single = 'Single quotes';
+const double = "Double quotes";
+const backtick = `Backtick`;
+
+console.log(single, double, backtick);
+
+/*
+const badQuotes = 'This is not allowed!"
+*/
+/*
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting); // Hello, Chris
+
+const one = "Hello, ";
+const two = "how are you?";
+const joined = `${one}${two}`;
+console.log(joined); // Hello, how are you?
+*/
+/*
+const button = document.querySelector("button");
+
+function greet() {
+    const name = prompt("What is your name?");
+    const greeting = document.querySelector("#greeting");
+    greeting.textContent = `Hello ${name}, nice to see you!`;
+}
+
+button.addEventListener("click", greet);
+*/
+/*
+const greeting = "Hello";
+const name = "Chris";
+console.log(greeting + ", " + name); // Hello, Chris
+console.log(`${greeting}, ${name}`);
+
+const song = "Fight the Youth";
+const score = 9;
+const highestScore = 10;
+const output = `I like the song ${song}. I gave it a score of ${(score / highestScore) * 100}%.`;
+console.log(output); // I like the song Fight the Youth. I gave it a score of 90%
+*/
+
+const newline = `One day you finally knew 
+what you had to do, 
+and began,`;
+console.log(newline);
