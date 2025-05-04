@@ -17,9 +17,12 @@ function reverseString(string){
 reverseString("blahblahblah");
 reverseString("hello there");
 
-function removeFromArray(arr, toRemove){
+const removeFromArray = function ( arr, toRemove )
+{
+  
+}
 
-};
 
-removeFromArray([1, 2, 3, 4, 5], 1, 2, 3, 4);
-removeFromArray([1, 2, 3, 4], 3, 2);
+removeFromArray( console.log([13, 45, 67, 89 ], 13));
+removeFromArray(console.log([1, 2, 3, 4, 5], 1, 2, 3, 4));
+removeFromArray(console.log([ 1, 2, 3, 4 ], 3, 2));
