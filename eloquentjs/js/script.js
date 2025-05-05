@@ -87,6 +87,7 @@ switch (prompt(`What is the weather like?`)) {
     break;
 }
 */
+/*
 // triangle
 
 for (i = '#'; i <= '#######'; i+='#'){
@@ -101,4 +102,14 @@ for (i = '1'; i <= 7; i++){
 
 for (i = 1; i <= 7; i++){
   console.log('#'.repeat(i));
+}
+*/
+
+// FizzBuzz
+
+for (i = 1; i <= 100; i++){
+  let output = "";
+  if (i % 3 === 0) output += 'Fizz';
+  if (i % 5 === 0) output += 'Buzz'
+  console.log(output || i);
 }
