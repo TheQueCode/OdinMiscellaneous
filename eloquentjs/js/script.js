@@ -177,7 +177,7 @@ function printFarmInventory (cows, chickens, pigs)
 
 printFarmInventory(7, 11, 3);
 */
-
+/*
 function zeroPad (number, width)
 {
   let string = String(number);
@@ -195,3 +195,80 @@ function printFarmInventory (cows, chickens, pigs)
 }
 
 printFarmInventory(7, 16, 3);
+*/
+
+// Home made Math.min
+/*
+function compare (a, b)
+{
+  if (a === b) {
+    return "Error: Inputs are the same.";
+  } else if (a > b) {
+    return b;
+  } else {
+    return a;
+  }
+};
+
+// Eloquent
+
+function min(a, b)
+{
+  if (a < b) return a;
+  else return b;
+}
+console.log(compare(13, 32));
+console.log(compare(1343232,240832));
+*/
+
+// Testing whether a number is even or odd
+/*
+function isEven (a)
+{ 
+  if (a % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
+
+// Eloquent
+
+function isEven (n)
+{
+  if (n === 0) return true;
+  else if (n === 1) return false;
+  else if (n < 0) return isEven(-n);
+  else return isEven(n - 2);
+}
+*/
+
+// Bean Counting
+/*
+function countBs (string)
+{
+  return countChar(string, 'B');
+}
+
+function countChar (string, char)
+{
+  let count = 0;
+  for (let i = 0; i < string.length; i++){
+    if (string[i] == char) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countBs('buBBleBeeTuna'));
+console.log(countBs('BatmanBakesButternutSquashBadly'));
+
+console.log(countChar('bubblebeetuna', 'B'));
+console.log(countChar('BatmanBakesButternutSquashBadly', 'e'));
+*/
+
