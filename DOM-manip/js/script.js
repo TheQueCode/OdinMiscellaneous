@@ -24,7 +24,7 @@ hContent.style.color = 'blue';
 
 container.appendChild(hContent);
 
-// added another div
+// added another div - with a h3 & another p inside
 
 const secondDiv = document.createElement('div');
 secondDiv.classList.add('secondDiv');
@@ -37,9 +37,52 @@ const secondDivH = document.createElement('h1');
 secondDivH.classList.add('secondDivH');
 secondDivH.textContent = "I'm in a div";
 
+secondDiv.appendChild(secondDivH);
+
 const secondDivP = document.createElement('p');
 secondDivP.classList.add('secondDivP');
 secondDivP.textContent = "ME TOO!"
 
-secondDiv.appendChild(secondDivH);
 secondDiv.appendChild(secondDivP);
+
+function alertFunction ()
+{
+  alert("Yay! You clicked the button!");
+}
+
+const btn = document.querySelector('#btn');
+btn.onclick = alertFunction;
+
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener("click", alertFunction);
+
+// accessing more information about the event with a callback - a callback in a function passed into another function as an argument
+
+// the 'e' param contains an object that references the event itself
+btn2.addEventListener("click", function (e)
+{
+  console.log(e);
+});
+
+btn2.addEventListener('click', function (e)
+{
+  console.log(e.target);
+});
+
+btn2.addEventListener(`click`, function (e)
+{
+  e.target.style.background = 'blue';
+});
+
+// buttoncontainer is a node list. It looks & acts like an array
+const buttons = document.querySelectorAll('button');
+
+// use the .forEach method to iterate through each button
+buttons.forEach((button) =>
+{
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () =>
+  {
+    alert(button.id);
+  });
+});
