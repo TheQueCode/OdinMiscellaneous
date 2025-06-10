@@ -28,3 +28,19 @@ margin-right, margin-left
 Margin (with 1 value):
 
 all four margins
+
+The flex shorthand
+
+flex-grow
+flex-shrink
+flex-basis
+
+flex: 1 == flex: 1 1 0 == flex-grow: 1, flex-shrink: 1, flex-basis: 0
+
+flex-grow - used as the flex item's growth factor (1 is every item grows at the same factor. 2 is one of the items will grow 2x the size of the others)
+
+flex-shrink - similar to flex-grown but sets the shrink factor. 1 shrinks items evenly. If you don't want an item to shrink, use 0. (flex-shrink only ends up being applied if the size of all the items is larger than their parent container)
+
+flex-basis - sets the initial size of a flex item. Using auto as flex-basis tells the item to check for a width declaration.
+
+flex: auto == flex: 1 1 auto == flex-grow: 1, flex-shrink: 1, flex-basis: auto
