@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  width: 100vw;
+  padding: 25px;
+  text-align: center;
+}
+
+.flexbox-container {
+  background-color: aqua;
+  padding: 12px;
+  border: 4px solid blue;
+  display: flex;
+}
+
+.one,
+.two,
+.three {
+  background-color: peachpuff;
+  border: 4px solid salmon;
+  height: 48px;
+  margin: 4px;
+  flex: 1;
+}
+
+.two {
+  display: flex;
+}
+
+.items {
+  background-color: orchid;
+  border: 4px solid orangered;
+  height: 32px;
+  flex: 1;
+}
