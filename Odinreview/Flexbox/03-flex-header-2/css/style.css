@@ -2,6 +2,12 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: #eee;
@@ -12,6 +18,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile-image {
@@ -45,4 +54,14 @@ a {
 
 ul {
   list-style-type: none;
+  display:flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.right-side-container,
+.left-side-container {
+  display: flex;
+  margin: 8px;
+  gap: 16px;
 }
