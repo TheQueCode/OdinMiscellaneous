@@ -1,8 +1,6 @@
-const reverseString = function(string) {
-  reversedNow = string.split('').reverse().join('');
-  return reversedNow;
-};
+const reverseString = function() {
 
+};
 
 // Do not edit below this line
 module.exports = reverseString;

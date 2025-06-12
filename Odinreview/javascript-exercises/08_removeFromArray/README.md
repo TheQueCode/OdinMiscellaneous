@@ -1,6 +1,4 @@
-npm test removeFromArray.spec.js
-
-# Exercise 04 - removeFromArray
+# Exercise 08 - removeFromArray
 
 Implement a function that takes an array and some other arguments then removes the other arguments from that array:
 
