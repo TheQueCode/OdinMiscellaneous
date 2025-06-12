@@ -32,4 +32,30 @@ const removeFromArray = function (arr, ...toRemove)
 
 console.log(removeFromArray([13, 45, 67, 89 ], 13));
 console.log(removeFromArray([1, 2, 3, 4, 5], 1, 2, 3, 4));
-console.log(removeFromArray([ 1, 2, 3, 4 ], 3, 2));
+console.log(removeFromArray([1, 2, 3, 4], 3, 2));
+
+function add7 (number) {
+  return number + 7;
+}
+
+console.log(add7(13));
+
+function multiply (num1, num2) {
+  return num1 * num2;  
+}
+
+console.log(multiply(10, 10));
+
+function capitalize (string) {
+  return string[0].toUpperCase() + string.slice(1).toLowerCase();
+}
+
+console.log(capitalize('doeS thIs worK?'));
+console.log(capitalize('reivmerkmvdFFOekrvevieSDLsver'));
+
+function lastLetter (string) {
+  return string.slice(-1);
+}
+
+console.log(lastLetter('Does this work?'));
+console.log(lastLetter('reivmerkmvdFFOekrvevieSDLsveX'));
