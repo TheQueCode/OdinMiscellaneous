@@ -41,7 +41,7 @@ img {
   width: 200px;
   margin-top: 8px;
   text-align: center;
-  text-wrap-mode: wrap;
+  /*text-wrap-mode: wrap;*/
 }
 
 
