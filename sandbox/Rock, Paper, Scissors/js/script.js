@@ -1,15 +1,3 @@
-// Declaring
-let humanChoice;
-let computerChoice;
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-// Scores
-
-let humanScore = 0;
-let computerScore = 0;
-
 //Getting computer's choice
 
 function getComputerChoice () {
@@ -31,33 +19,49 @@ function getHumanChoice () {
   return humanChoice;
 }
 
-// Playing a single round
+// playing 5 rounds
 
-function playRound (humanChoice, computerChoice) {
-  const plainHumanChoice = humanChoice.toLowerCase();
-  const fancyHumanChoice = plainHumanChoice[0].toUpperCase() + plainHumanChoice.slice(1);
-  const fancyComputerChoice = computerChoice[0].toUpperCase() + computerChoice.slice(1);
-  if (plainHumanChoice === computerChoice) {
-    console.log(`Player Choice: ${fancyHumanChoice}`);
-    console.log(`Computer Choice: ${fancyComputerChoice}`);
-    console.log(`Tie! Try again!`);
-    console.log(`Player Score: ${humanScore}`);
-    console.log(`Computer Score: ${computerScore}`);
-  } else if ((plainHumanChoice === 'rock' && computerChoice === 'scissors') || (plainHumanChoice === 'scissors' && computerChoice === 'paper') || (plainHumanChoice === 'paper' && computerChoice === 'rock')) {
-    console.log(`Player Choice: ${fancyHumanChoice}`);
-    console.log(`Computer Choice: ${fancyComputerChoice}`);
-    console.log(`You win! ${fancyHumanChoice} beats ${fancyComputerChoice} Yay!`);
-    humanScore++;
-    console.log(`Player Score: ${humanScore}`);
-    console.log(`Computer Score: ${computerScore}`);    
-  } else {
-    console.log(`Player Choice: ${fancyHumanChoice}`);
-    console.log(`Computer Choice: ${fancyComputerChoice}`);
-    console.log(`You lose! ${computerChoice} beats ${humanChoice}. Try again.`);
-    computerScore++;
-    console.log(`Player Score: ${humanScore}`);
-    console.log(`Computer Score: ${computerScore}`);
+function playGame () {
+
+  // Scores
+  let humanScore = 0;
+  let computerScore = 0;
+
+  // Playing a single round
+
+  function playRound (humanChoice, computerChoice) {
+
+    const plainHumanChoice = humanChoice.toLowerCase();
+    const fancyHumanChoice = plainHumanChoice[0].toUpperCase() + plainHumanChoice.slice(1);
+    const fancyComputerChoice = computerChoice[0].toUpperCase() + computerChoice.slice(1);
+    if (plainHumanChoice === computerChoice) {
+      console.log(`Player Choice: ${fancyHumanChoice}`);
+      console.log(`Computer Choice: ${fancyComputerChoice}`);
+      console.log(`Tie! Try again!`);
+      console.log(`Player Score: ${humanScore}`);
+      console.log(`Computer Score: ${computerScore}`);
+    } else if ((plainHumanChoice === 'rock' && computerChoice === 'scissors') || (plainHumanChoice === 'scissors' && computerChoice === 'paper') || (plainHumanChoice === 'paper' && computerChoice === 'rock')) {
+      console.log(`Player Choice: ${fancyHumanChoice}`);
+      console.log(`Computer Choice: ${fancyComputerChoice}`);
+      console.log(`You win! ${fancyHumanChoice} beats ${fancyComputerChoice} Yay!`);
+      humanScore++;
+      console.log(`Player Score: ${humanScore}`);
+      console.log(`Computer Score: ${computerScore}`);    
+    } else {
+      console.log(`Player Choice: ${fancyHumanChoice}`);
+      console.log(`Computer Choice: ${fancyComputerChoice}`);
+      console.log(`You lose! ${computerChoice} beats ${humanChoice}. Try again.`);
+      computerScore++;
+      console.log(`Player Score: ${humanScore}`);
+      console.log(`Computer Score: ${computerScore}`);
+    }
+  }
+  for (let i = 1; i <= 5; i++) {
+    // Declaring
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
   }
 }
 
-playRound(humanSelection, computerSelection);
+playGame();
