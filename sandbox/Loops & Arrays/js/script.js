@@ -119,9 +119,9 @@ btn.addEventListener("click", () => {
 });
 
 
-// Acive learning
+// Active learning
 
-//coun down from 10
+//count down from 10
 
 for (i = 10; i >= 0; i--){
   if (i === 10) {
@@ -132,3 +132,50 @@ for (i = 10; i >= 0; i--){
     console.log(`Blast off!`);
   }
 }
+
+// map
+
+function addOne (num) {
+  return num + 1;
+}
+
+const arr = [1, 2, 3, 4, 5];
+const mappedArr = arr.map(addOne);
+console.log(mappedArr); // [2, 3, 4, 5, 6]
+
+// filter
+
+function isOdd (num) {
+  return num % 2 !== 0;
+}
+
+const array = [1, 2, 3, 4, 5];
+const oddNums = arr.filter(isOdd);
+console.log(oddNums); // [1, 3, 5]
+console.log(array); // [1, 2, 3, 4, 5]
+
+// reduce
+
+const arrArr = [1, 2, 3, 4, 5];
+const productOfAllNums = arr.reduce((total, current) => {
+  return total * current;
+}, 1);
+
+console.log(productOfAllNums); // 120
+console.log(arrArr); // [1, 2, 3, 4, 5]
+
+function camelize (string) {
+  return string
+    .split('-')
+    .map((word, index) => {
+      if (index === 0) {
+        return word;
+      }
+      return word[0].toUpperCase() + word.slice(1);
+    })
+    .join('')
+}
+
+console.log(camelize("background-color"));
+console.log(camelize("list-style-image"));
+console.log(camelize("-webkit-transition"));
