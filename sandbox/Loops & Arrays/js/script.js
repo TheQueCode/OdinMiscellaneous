@@ -184,3 +184,36 @@ function filterRange (arr, a, b) {
 
 let arrToFilter = [5, 3, 8, 1];
 filterRange(arrToFilter, 1, 4);
+
+
+// Active learning - filling in a guest list
+const guestList = document.createElement('div');
+guestList.textContent = 'GuestList: '
+const admitted = document.createElement('p');
+admitted.textContent = 'Admitted: '
+const refused = document.createElement('p');
+refused.textContent = 'Refused: '
+
+container.appendChild(guestList);
+guestList.appendChild(admitted);
+guestList.appendChild(refused);
+
+const people = ['Henry', 'Que', 'Greg', 'Quinn', 'Phil', 'Charlie', 'Adam', 'Kaza', 'Lola', 'Wendy'];
+
+for (let person of people) {
+  person === 'Phil' || person === 'Lola' ? refused.textContent += person + ' ' : admitted.textContent += person + ' ';
+}
+
+for (let i = 2; i <= 10; i++){
+  if (i % 2 === 0) console.log(`${i}`);
+}
+
+
+let num;
+
+do {
+  num = prompt('Enter a number greater than 100: ', 0);
+} while (num <= 100 & num);
+
+
+
