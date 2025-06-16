@@ -208,7 +208,7 @@ for (let i = 2; i <= 10; i++){
   if (i % 2 === 0) console.log(`${i}`);
 }
 
-
+/*
 let num;
 
 do {
@@ -216,4 +216,42 @@ do {
 } while (num <= 100 & num);
 
 
+For each i in the interval{
+  check if i has a divisor from 1..i
+  if yes => the value is not a prime
+  if no => the value is a prime show it
+}
+*/
+
+let n = 10;
+
+nextPrime:
+for (let i = 2; i <= n; i++){
+  for (let j = 2; j < i; j++){
+    if (i % j === 0) continue nextPrime;
+  }
+  console.log(`${i}`);
+}
+
+
+function sumOfTripledEvens (array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++){
+    if (array[i] % 2 === 0) {
+      const tripleEvenNumber = array[i] * 3;
+      sum += tripleEvenNumber;
+    }
+  }
+  return sum;
+}
+
+console.log(sumOfTripledEvens([1, 2, 3, 4, 5]));
+
+function addOne (num) {
+  return num + 1;
+}
+
+const arrAddOne = [1, 2, 3, 4, 5];
+const mappedArray = arr.map(addOne);
+console.log(mappedArray); // [2, 3, 4, 5, 6];
 
