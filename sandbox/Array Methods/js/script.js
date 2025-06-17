@@ -203,7 +203,7 @@ function maxNum (arr) {
 
 maxNum([1, 5, 2, 8, 3]);
 maxNum([1110, 555, 342, -8888, 333]);
-*/
+
 // Check if a string is a palindrome
 
 function palindrome (str) {
@@ -217,3 +217,67 @@ console.log(palindrome('radar'));
 console.log(palindrome('refer'));
 console.log(palindrome('mom'));
 console.log(palindrome('function'));
+
+// for of loops
+
+//loop through arrays
+
+const items = ['book', 'table', 'chair', 'kite'];
+const users = [{name: 'Que'}, {name: 'Kaza'}, {name: 'Quinn'}];
+
+for (const item of items) {
+  console.log(item);
+}
+
+for (const user of users) {
+  console.log(user.name);
+}
+
+// loop over strings
+
+const str = 'Hello World';
+
+for (const letter of str) {
+  console.log(letter);
+}
+
+//loop over maps
+
+const map = new Map();
+map.set('name', 'John');
+map.set('age', 30);
+
+for (const [key, value] of map) {
+  console.log(key, value);
+}
+
+// for in loop
+
+const colorObj = {
+  color1: 'red',
+  color2: 'orange',
+  color3: 'yellow',
+  color4: 'green',
+  color5: 'blue',
+  color6: 'indigo',
+  color7: 'violet',
+};
+
+for (const key in colorObj) {
+  console.log(key, colorObj[key]);
+}
+
+const colorArr = ['red', 'green', 'blue', 'yellow'];
+
+for (const key in colorArr) {
+  //console.log(color); //0, 1, 2, 3
+  console.log(colorArr[key]); // red green blue yellow
+}
+*/
+// High order array methods
+
+// forEach
+
+const socials = ['Twitter', 'LinkedIn', 'Threads', 'Instagram'];
+
+socials.forEach(social => console.log(social));
