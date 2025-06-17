@@ -273,11 +273,29 @@ for (const key in colorArr) {
   //console.log(color); //0, 1, 2, 3
   console.log(colorArr[key]); // red green blue yellow
 }
-*/
+
 // High order array methods
 
 // forEach
 
 const socials = ['Twitter', 'LinkedIn', 'Threads', 'Instagram'];
 
-socials.forEach(social => console.log(social));
+socials.forEach(logSocials);
+
+function logSocials (social) {
+  console.log(`${social}`)
+}
+
+const socialObj = [
+  {name: 'Threads', url: 'https://threads.com'},
+  {name: 'Instagram', url: 'https://instagram.com'},
+  {name: 'LinkedIn', url: 'https://linkedin.com'},
+  {name: 'BlueSky', url: 'https://bluesky.com'},
+];
+
+socialObj.forEach(item => console.log(item.url));
+*/
+// high order array method 
+
+// filter
+
