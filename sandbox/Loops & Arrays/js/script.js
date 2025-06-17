@@ -247,6 +247,9 @@ function sumOfTripledEvens (array) {
 
 console.log(sumOfTripledEvens([1, 2, 3, 4, 5]));
 
+
+// map method
+
 function addOne (num) {
   return num + 1;
 }
@@ -255,3 +258,33 @@ const arrAddOne = [1, 2, 3, 4, 5];
 const mappedArray = arr.map(addOne);
 console.log(mappedArray); // [2, 3, 4, 5, 6];
 
+//filter method
+
+function isOdd (num) {
+  return num % 2 !== 0;
+}
+
+const arrForOdd = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const oddNumsForOdd = arrForOdd.filter(isOdd);
+console.log(oddNumsForOdd);
+console.log(arrForOdd);
+
+// reduce method
+
+const reduceArray = [1, 2, 3, 4, 5];
+const producOfReduceArrayNums = reduceArray.reduce((total, current) => {
+  return total * current;
+}, 1);
+console.log(producOfReduceArrayNums);
+console.log(reduceArray);
+
+// Rewrite function
+
+function sumOfTripledEvensRewrite (array) {
+  return array
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 3)
+    .reduce((acc, curr) => acc + curr);
+}
+
+console.log(sumOfTripledEvensRewrite([1, 2, 3, 4, 5])); //18
