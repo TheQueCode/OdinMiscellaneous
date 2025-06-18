@@ -423,12 +423,24 @@ const evenDoubled = numbers
   .map(evenNums => evenNums * evenNums)
 
 console.log(evenDoubled);
-*/
+
 // high order array method
 
 // reduce
 
-const array = [1, 2, 3, 4, 5];
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const totalArray = array.reduce((prev, curr) => prev + curr, 0);
 console.log(totalArray);
+
+const cart = [
+  {id: 1, name: 'Product 1', price: 130},
+  {id: 2, name: 'Product 2', price: 150},
+  {id: 3, name: 'Product 3', price: 175},
+  {id: 4, name: 'Product 4', price: 180},
+  {id: 5, name: 'Product 5', price: 230},
+];
+
+const totalCart = cart.reduce((prev, curr) => prev + curr.price, 0);
+console.log(totalCart);
+*/
