@@ -405,7 +405,7 @@ const companyYears = companies.map(company => {
   };
 });
 console.log(companyYears);
-*/
+
 // chain map methods
  
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -423,3 +423,12 @@ const evenDoubled = numbers
   .map(evenNums => evenNums * evenNums)
 
 console.log(evenDoubled);
+*/
+// high order array method
+
+// reduce
+
+const array = [1, 2, 3, 4, 5];
+
+const totalArray = array.reduce((prev, curr) => prev + curr, 0);
+console.log(totalArray);
