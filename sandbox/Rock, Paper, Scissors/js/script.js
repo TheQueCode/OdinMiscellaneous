@@ -1,3 +1,19 @@
+const container = document.querySelector('.container');
+
+const rockBtn = document.createElement('button');
+rockBtn.textContent = 'Rock';
+
+const paperBtn = document.createElement('button');
+paperBtn.textContent = 'Paper';
+
+const scissorsBtn = document.createElement('button');
+scissorsBtn.textContent = 'Scissors';
+
+container.appendChild(rockBtn);
+container.appendChild(paperBtn);
+container.appendChild(scissorsBtn);
+
+
 //Getting computer's choice
 
 function getComputerChoice () {
