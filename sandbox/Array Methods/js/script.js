@@ -443,7 +443,7 @@ const cart = [
 
 const totalCart = cart.reduce((prev, curr) => prev + curr.price, 0);
 console.log(totalCart);
-*/
+
 
 const people = [
   {
@@ -509,3 +509,35 @@ const capitalizedWords = words
   .map(words => words[0].toUpperCase() + words.slice(1))
 
 console.log(capitalizedWords);
+
+function camelize (str) {
+  return str
+    .split('-')
+    .map((word, index) => index === 0 ? word : word[0].toUpperCase() + word.slice(1))
+    .join('');
+}
+
+console.log(camelize("background-color"));
+console.log(camelize("list-style-image"));
+console.log(camelize("-webkit-transition"));
+
+
+function filterRange (arr, a, b) {
+  arr.filter(item => {
+    if ((item >= a) && (item <= b))
+      console.log(item);
+  })
+};
+
+let array = [5, 3, 8, 1];
+
+filterRange(array, 1, 4);
+*/
+
+let arr = [5, 2, 1, -10, 8];
+
+const sortedDecreasing = arr.sort((a, b) => b - a);
+//const sortedIncreasing = arr.sort((a, b) => a - b);
+
+console.log(sortedDecreasing);
+//console.log(sortedIncreasing);
