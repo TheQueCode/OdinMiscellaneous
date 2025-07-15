@@ -54,7 +54,7 @@ const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, 'not read yet');
 
 console.log(theHobbit.info());
 
-
+/*
 function Person (name) {
   if (!new.target) {
     throw Error('Must use `new` operator to call constructor')
@@ -92,3 +92,18 @@ player2.sayName();
 
 player1.getMarker();
 player2.getMarker();
+*/
+let output;
+// creating a new empty object
+let x = {};
+
+// another way
+let y = new Object();
+
+// to find the prototype of a created object
+output = Object.getPrototypeOf(x);
+output = Object.getPrototypeOf(y);
+
+
+
+console.log(output);
